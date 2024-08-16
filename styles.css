@@ -12,7 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #fff; /* Light text color for contrast */
-    background: linear-gradient(to right, #000000, #0000ff); /* Black to blue gradient */
+    background-color: #333333; /* Dark gray background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,10 +24,11 @@ body {
 header {
     position: absolute;
     top: 10px; /* Distance from the top of the viewport */
-    width: 100%; /* Full width to align items */
+    left: 10px; /* Distance from the left of the viewport */
+    right: 10px; /* Distance from the right of the viewport */
     display: flex;
     justify-content: space-between; /* Space between the buttons */
-    padding: 0 10px; /* Padding to ensure buttons are not flush with the edges */
+    width: calc(100% - 20px); /* Full width minus padding */
 }
 
 button {
