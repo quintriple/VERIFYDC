@@ -24,6 +24,10 @@ body {
 header {
     position: absolute;
     top: 10px; /* Distance from the top of the viewport */
+    width: 100%; /* Full width to align items */
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    padding: 0 10px; /* Padding to ensure buttons are not flush with the edges */
 }
 
 button {
@@ -75,13 +79,15 @@ img {
     height: 100vh; /* Full viewport height */
 }
 
-/* Top-left QR code button */
+/* Specific button styles for header */
+.top-left-btn {
+    background-color: #000; /* Solid black background */
+    color: #fff; /* White text color */
+}
+
 .qr-code-btn {
     background-color: #000; /* Solid black background */
     color: #fff; /* White text color */
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 /* Hidden input field */
